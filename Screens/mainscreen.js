@@ -4,7 +4,8 @@ import { View, SafeAreaView, TextInput, Text, Image, StatusBar, TouchableOpacity
 import { ScrollView } from 'react-native-gesture-handler';
 import { CalendarDaysIcon, MagnifyingGlassIcon, MapPinIcon } from 'react-native-heroicons/outline';
 import {debounce} from 'lodash';
-import * as Progress from 'react-native-progress'
+import * as Progress from 'react-native-progress';
+
 const Main = () => {
 const [showsearch, togglesearch] = useState(false);
 const [Location, setLocation] = useState([1, 2, 3]);
@@ -186,4 +187,5 @@ return (
     )}
   </View>
 );
-};export default Main;
+};
+export default Main;
